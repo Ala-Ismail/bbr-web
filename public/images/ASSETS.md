@@ -41,3 +41,12 @@ Final prompt:
 
 Photorealistic editorial travel photograph for a premium aviation engineering website, wide landscape 16:9 composition. Three happy adult passengers of varied backgrounds arriving at their destination in a modern airport arrivals concourse, walking together with carry-on rolling suitcases, relaxed natural smiles, candid rather than posed. Floor-to-ceiling glass windows reveal a softly blurred unbranded passenger aircraft and distant coastal hills in golden evening light. Realistic anatomy and luggage, polished terminal architecture. Deep navy shadows and warm amber-orange sunlight, refined cinematic natural photography, welcoming human atmosphere. People occupy center and right of frame, full upper bodies and luggage visible with comfortable margins. No readable signage, no text, no logos, no watermark. A believable arrival moment, no endorsement or safety certification implied.
 
+
+## child-outdoors.webp
+
+Built-in image_gen generation. Original PNG and optimized WebP saved here. Illustrative portrait.
+
+Final prompt:
+
+Photorealistic outdoor portrait photograph of a happy child about eight years old in a leafy park, fully clothed in a navy sweater, natural relaxed smile looking slightly beside the camera, head and shoulders with comfortable space around head. Portrait orientation 2:3. Shot with a full-frame 50mm lens at f/2, authentic natural facial proportions, soft shallow depth of field and creamy green bokeh, warm late afternoon sunlight, subtle amber highlights and navy shadows. Candid family photography, realistic skin texture, gentle joyful sense of discovery. No text, logos, watermark, aircraft or props. Premium editorial photograph for a family-friendly aviation technology website.
+
