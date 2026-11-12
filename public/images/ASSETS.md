@@ -32,3 +32,12 @@ Final prompt:
 
 Use case: product-mockup. Asset: aerospace technology website installation concept. Photorealistic close up of a plausible compact orange conceptual flight data recorder metal enclosure mounted in an aircraft avionics equipment rack, rugged metal mounts and realistic wiring harness with circular connectors, adjacent aluminum electronics boxes, clean maintained engineering environment, no people. Three quarter perspective, dark navy shadows and restrained warm highlights, premium realistic engineering photography, wide landscape crop. No text no brand no labels no screen no watermark. Clearly conceptual generic hardware, not a specific commercial product.
 
+
+## passenger-arrival.webp
+
+Generated with the built-in image_gen tool. Original PNG and optimized WebP saved in this directory. Illustrative passenger arrival scene.
+
+Final prompt:
+
+Photorealistic editorial travel photograph for a premium aviation engineering website, wide landscape 16:9 composition. Three happy adult passengers of varied backgrounds arriving at their destination in a modern airport arrivals concourse, walking together with carry-on rolling suitcases, relaxed natural smiles, candid rather than posed. Floor-to-ceiling glass windows reveal a softly blurred unbranded passenger aircraft and distant coastal hills in golden evening light. Realistic anatomy and luggage, polished terminal architecture. Deep navy shadows and warm amber-orange sunlight, refined cinematic natural photography, welcoming human atmosphere. People occupy center and right of frame, full upper bodies and luggage visible with comfortable margins. No readable signage, no text, no logos, no watermark. A believable arrival moment, no endorsement or safety certification implied.
+
