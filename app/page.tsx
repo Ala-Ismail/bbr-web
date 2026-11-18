@@ -1,4 +1,87 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Activity, ShieldCheck, ScanLine, MoveUpRight, Plane } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import Architecture from '@/components/architecture';
-export default function Home(){return <main id="main"><section className="hero"><div className="hero-image" role="img" aria-label="Generated concept image of an unbranded passenger aircraft above the clouds at dawn"/><div className="hero-shade"/><div className="container hero-content"><div className="eyebrow"><span className="line"/> ENGINEERED FOR THE RECORD</div><h1>Every parameter.<br/>Every moment.<br/><span>A continuous record.</span></h1><p>An FPGA-based foundation for the next generation of aviation flight-data recording. From aircraft systems to recoverable insight.</p><div className="actions"><Link className="button primary" href="/technology">Explore the technology <ArrowUpRight size={17}/></Link><Link className="text-link" href="/development">Our development plan <ArrowRight size={16}/></Link></div><div className="hero-status"><span className="dot"/> AVIATION ARCHITECTURE IN DEVELOPMENT</div></div><div className="hero-bottom container"><span>PRECISION IN CAPTURE. CONFIDENCE IN RECOVERY.</span><span>AI-generated aviation concept <span className="plus">+</span></span></div></section><section className="metrics"><div className="container metrics-inner"><div className="metric-intro">DESIGNED FOR<br/><strong>the complete flight.</strong><span>Engineering planning targets</span></div>{[['25','hours','Continuous retention target'],['175','kB/s','Stored-stream planning ceiling'],['2×','F-RAM','Mirrored persistent staging'],['16','GiB','Minimum usable archive target']].map(([n,u,l])=><div className="metric" key={l}><strong>{n}<span>{u}</span></strong><p>{l}</p></div>)}</div></section><section className="container passenger-arrival"><figure><img src="/images/passenger-arrival.webp" alt="Three smiling passengers walking through an airport arrivals terminal with their luggage at sunset" width="1672" height="941" loading="lazy"/><figcaption>AI-generated passenger arrival scene.</figcaption></figure><div><div className="eyebrow">THE PEOPLE BEHIND EVERY FLIGHT</div><h2>Every journey.<br/><span>A destination worth reaching.</span></h2><p>Reunions, new places and the simple pleasure of arriving. Behind every flight is a personal story.</p><p>Our engineering focus is a clearer record of the journey, with flight data that can be recovered and understood.</p><Link className="inline-link" href="/technology">Explore the engineering <ArrowUpRight size={16}/></Link></div></section><section className="section container intro"><div><div className="eyebrow">01 / THE MISSION</div><h2>Flight is complex.<br/><span>The record should be clear.</span></h2></div><div className="intro-copy"><p>Every flight produces a story in data. BBR is being developed to preserve that story: instrument measurements, aircraft-system states and control inputs, with the context needed to understand them.</p><p className="muted">A proposed continuous recording path pairs deterministic FPGA processing with persistent staging and independent recovery.</p><Link className="inline-link" href="/technology">Meet the architecture <ArrowUpRight size={16}/></Link></div></section><section className="section architecture-section" id="architecture"><div className="container"><div className="section-heading"><div><div className="eyebrow">02 / FROM SOURCE TO STORAGE</div><h2>One connected recording path.</h2></div><p>Purposeful at every stage.<br/>Explore the proposed data flow below.</p></div><Architecture/></div></section><section className="section container"><div className="section-heading"><div><div className="eyebrow">03 / ENGINEERING PRINCIPLES</div><h2>Built around what matters.</h2></div><span className="small-note">Planned capabilities · Verification pending</span></div><div className="principles">{[{icon:Activity,title:'Continuity by design',body:'A continuous path intended to keep required recording moving through chunk rollover and optional event marking.'},{icon:ShieldCheck,title:'Recovery in focus',body:'Short recoverable chunks and persistent staging designed to preserve committed data through interruption.'},{icon:ScanLine,title:'Clarity in every sample',body:'Source identity, timestamps and explicit quality flags help distinguish valid measurements from missing or stale inputs.'}].map((p,i)=><article key={p.title}><div className="principle-top"><p.icon size={28} strokeWidth={1.3}/><span>0{i+1}</span></div><h3>{p.title}</h3><p>{p.body}</p></article>)}</div></section><section className="aircraft-section"><div className="container aircraft-inner"><div className="eyebrow">AIRCRAFT SYSTEMS, CONNECTED</div><h2>A view of the whole aircraft.<br/><span>A focus on every input.</span></h2><p>Instruments. Navigation. Engines. Control states.<br/>A defined source for each recorded parameter.</p><div className="aircraft-link"><Plane size={30} strokeWidth={1}/><span>Protected aircraft interfaces <ArrowRight size={16}/> BBR recording path</span></div><Link className="inline-link" href="/technology#aircraft">See how BBR interfaces with the aircraft <ArrowUpRight size={16}/></Link><span className="image-caption">Generated aircraft integration concept · Placement illustrative</span></div></section><section className="section container development-teaser"><div><div className="eyebrow">04 / THE PATH AHEAD</div><h2>Engineering first.<br/><span>Evidence at every step.</span></h2><p>From an agreed aircraft-data contract to a verified continuous recorder prototype, each phase has a defined purpose.</p><Link className="button secondary" href="/development">View the development programme <ArrowUpRight size={16}/></Link></div><div className="roadmap-preview">{[['P0','Define the foundation','Aircraft basis, parameter dictionary and architecture.'],['P1','Build the continuous path','Acquisition, storage, recovery and independent decoding.'],['P2','Verify the complete system','Hardware integration, qualification and installation evidence.']].map(([n,t,b])=><div key={n}><span>{n}</span><div><h3>{t}</h3><p>{b}</p></div><MoveUpRight size={18}/></div>)}</div></section><section className="container installation"><img src="/images/engineer-readback.webp" alt="Generated concept of an aviation engineer reviewing a conceptual recorder with a laptop in a hangar" loading="lazy"/><div><div className="eyebrow">FROM FLIGHT TO FINDINGS</div><h2>Put the record<br/>in the engineer’s hands.</h2><p>Explore a proposed readback workstation, inspect synthetic parameters and follow the aircraft-to-recorder interface.</p><Link className="inline-link" href="/readback">Explore the readback mockup <ArrowUpRight size={16}/></Link><p className="caption">AI-generated workflow concept. Interface and data are illustrative.</p></div></section><section className="container closing"><div><span className="eyebrow">THE NEXT CHAPTER</span><h2>Better records begin<br/>with better engineering.</h2></div><Link className="button primary" href="/development">Discover what’s next <ArrowUpRight size={17}/></Link></section><div className="container scope-note">BBR’s aviation variant is a proposed instrument-data recorder. Implementation, performance verification and qualification remain pending. Cockpit voice, audio and video recording are outside scope.</div></main>}
+import { ChapterLink, ChapterList } from '@/components/report';
+
+const metrics = [
+  ['25', 'h', 'Continuous retention target'],
+  ['175', 'kB/s', 'Stored-stream ceiling'],
+  ['16', 'GiB', 'Minimum usable archive'],
+  ['2', 'MiB', 'Mirrored staging capacity'],
+];
+
+export default function Home() {
+  return (
+    <main id="main" className="container">
+      <section className="cover" aria-labelledby="cover-title">
+        <div className="cover-copy">
+          <p className="eyebrow cover-kicker">Technology &amp; business white paper</p>
+          <h1 id="cover-title">Flight Data<br className="desktop-break" /> Recorder<br className="desktop-break" /> Assessment</h1>
+          <p className="lede">This BBR aviation case study assesses FPGA-based continuous capture, independent recovery and the case for prototype investment.</p>
+          <div className="cover-actions">
+            <a className="button primary" href="#executive-summary">Read the assessment <ArrowDown size={17} aria-hidden="true" /></a>
+            <Link className="chapter-link" href="/technology">Technical architecture <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          </div>
+        </div>
+        <figure className="cover-figure">
+          <Image src="/images/assessment-hangar.webp" alt="Rear view of a civil aircraft in a maintenance hangar" width={1774} height={887} preload />
+          <figcaption>AI-generated illustration of a civil aviation maintenance hangar.</figcaption>
+        </figure>
+      </section>
+
+      <section className="baseline" aria-labelledby="baseline-title">
+        <h2 id="baseline-title" className="eyebrow">Engineering planning baseline</h2>
+        <dl>
+          {metrics.map(([value, unit, label]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{value} <span>{unit}</span></dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <div className="overview-grid">
+        <aside className="report-aside">
+          <nav aria-label="Report contents">
+            <h2>In this report</h2>
+            <a href="#executive-summary">Executive summary</a>
+            <a href="#other-applications">Applications beyond aviation</a>
+            <a href="#chapters">Assessment chapters</a>
+            <a href="#architecture">Recording path</a>
+          </nav>
+        </aside>
+        <div className="report-content">
+          <section id="executive-summary" className="report-section">
+            <h2>Executive summary</h2>
+            <p className="lead-copy">BBR proposes continuous recording of aircraft instrument and system data. The design combines scheduled FPGA acquisition, persistent staging and a NAND archive with a separately developed extraction and decoding path.</p>
+            <p>Aviation is one case study for the broader BBR recording architecture. The same approach could support other fields that need a traceable record of equipment behaviour before, during and after an event.</p>
+            <p>At the planning ceiling of 175,000 bytes per second, 25 hours of data requires approximately 14.67 GiB. The proposed 16 GiB usable archive covers that scenario on paper. Sustained throughput, power-loss recovery, crash protection and installation feasibility still require evidence.</p>
+            <div className="assessment-note">
+              <h3>Decision for the next phase</h3>
+              <p>Select one target aircraft and a partner who can provide interface data and test access. Use that input to scope a bench prototype and estimate integration, qualification and support costs.</p>
+            </div>
+            <p className="fine-print">Scope covers instrument and aircraft-system data. Cockpit voice, audio and video are outside the current study.</p>
+          </section>
+          <section id="other-applications" className="report-section">
+            <h2>Applications beyond aviation</h2>
+            <p>In mining, a BBR deployment could capture haul-truck or fixed-plant telemetry to help teams review equipment stoppages. In strategic asset management, it could preserve time-stamped condition and usage histories to inform maintenance and replacement decisions. In industrial operations, it could retain process variables and alarms for downtime analysis.</p>
+            <p>Each application would need its own data sources, retention targets, environmental requirements and recovery tests. The figures in this paper describe the aviation planning scenario.</p>
+            <ChapterLink href="/business#other-sectors">Review the cross-sector adoption hypotheses</ChapterLink>
+          </section>
+          <section id="chapters" className="report-section">
+            <h2>Assessment chapters</h2>
+            <ChapterList />
+          </section>
+          <section id="architecture" className="report-section">
+            <h2>Proposed recording path</h2>
+            <p>Select a stage to review its role in the recording chain.</p>
+            <Architecture />
+            <ChapterLink href="/technology#architecture">View the top-level architecture diagram</ChapterLink>
+          </section>
+        </div>
+      </div>
+    </main>
+  );
+}

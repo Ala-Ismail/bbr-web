@@ -50,3 +50,23 @@ Final prompt:
 
 Photorealistic outdoor portrait photograph of a happy child about eight years old in a leafy park, fully clothed in a navy sweater, natural relaxed smile looking slightly beside the camera, head and shoulders with comfortable space around head. Portrait orientation 2:3. Shot with a full-frame 50mm lens at f/2, authentic natural facial proportions, soft shallow depth of field and creamy green bokeh, warm late afternoon sunlight, subtle amber highlights and navy shadows. Candid family photography, realistic skin texture, gentle joyful sense of discovery. No text, logos, watermark, aircraft or props. Premium editorial photograph for a family-friendly aviation technology website.
 
+
+## assessment-hangar.webp
+
+Built-in ImageGen. Cover illustration for the BBR white paper. Optimized WebP, 1774 × 887.
+
+Final prompt
+
+Use case: stylized-concept. Asset type: wide cover photograph for an aviation technology and business assessment white paper. Photorealistic high-end editorial aerospace photograph, cinematic but restrained. Passenger jet seen from directly behind and slightly above, centered, parked within a cavernous dark aircraft maintenance hangar; broad straight wings span the frame, cool steel-blue structural lines form a precise symmetrical perspective; amber work lights and a few amber floor reflections. Aircraft in muted silver, rich navy shadows. No people, lettering, graphics, logos or watermarks. Landscape, suitable to crop to about 2:1. Keep the full wings and aircraft tail visible in the central area.
+
+## assessment-recorder.webp
+
+Built-in ImageGen. Illustration of conceptual equipment for the technology assessment. Optimized WebP, 1400 × 788.
+
+Final prompt
+
+Use case: product-mockup. Asset type: supporting wide editorial photograph for an aviation flight-data recorder technical white paper. On a dark slate aerospace electronics workbench, a compact safety-orange finned rectangular instrument-data recorder enclosure, a bare green FPGA evaluation board and carefully arranged test probes. Close oblique angle, quiet documentary realism, restrained navy and warm amber palette, sharp connector and metal detail, softly defocused background. Depicts conceptual equipment. No text, logos, people or watermarks. Landscape framing, main subjects in centre.
+
+## aviation-bbr-top-level.png
+
+User-supplied architecture figure dated 8 November 2026. Used at its original resolution in the technology chapter.

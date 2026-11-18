@@ -1,6 +1,6 @@
 # BBR Aviation website
 
-First website draft based on `Aviation_BBR_design.md` and `bbr_web_design.md`. Built with Next.js, React and TypeScript, with a static production export.
+Technology and business assessment based on `Aviation_BBR_design.md` and `bbr_web_design.md`. Built with Next.js, React and TypeScript, with a static production export.
 
 ## Local development
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:3000. Routes: `/`, `/technology`, `/development`, `/readback`.
+Open http://127.0.0.1:3000. Routes: `/`, `/technology`, `/business`, `/development`, `/readback`. See [improvement.md](improvement.md) for the white paper structure and evidence limits.
 
 The readback page is an interactive concept using deterministic synthetic flight samples. It includes parameter selection, sample-time inspection, explicit missing-data intervals, engineering-unit CSV export and an illustrative system topology. It does not connect to or issue commands to hardware. Demo sessions share the same synthetic sample set.
 
@@ -42,4 +42,4 @@ Once the GitHub repository is published, import it in Vercel and deploy. No Verc
 
 ## Content and assets
 
-All aviation performance figures are proposed planning targets, not measured or certified capabilities. Generated scenes are labelled as concepts. Image prompts and provenance are recorded in `public/images/ASSETS.md` when generated assets are added. Google Fonts supplies DM Sans and Manrope with system-font fallbacks; this can be changed to self-hosted font files before production.
+All aviation performance figures are proposed planning targets, not measured or certified capabilities. Generated scenes are labelled as concepts. Image prompts and provenance are recorded in `public/images/ASSETS.md` when generated assets are added. The report uses system serif and sans-serif fonts.

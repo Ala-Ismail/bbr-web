@@ -1,6 +1,38 @@
-import Image from 'next/image';
 import type { Metadata } from 'next';
 import Readback from '@/components/readback';
+import { ChapterLink, ReportPage } from '@/components/report';
 import './readback.css';
-export const metadata: Metadata = {title:'Readback & system interface',description:'Explore a conceptual BBR engineering readback workstation using synthetic flight data and illustrative system connections.'};
-export default function ReadbackPage(){return <main id="main"><section className="readback-hero"><Image className="readback-hero-photo" src="/images/readback-maintenance-hangar.png" alt="Aviation engineers inspecting an exposed aircraft engine inside a maintenance hangar" fill sizes="100vw" preload /><div className="readback-hero-shade" aria-hidden="true" /><div className="container page-hero readback-hero-content"><div className="eyebrow">BBR / ENGINEERING WORKSTATION</div><h1>From recorded data<br/>to engineering insight.</h1><p>Explore a proposed readback and system-interface workflow, from aircraft sources to independent engineering-unit export.</p><span className="status-tag">INTERACTIVE MOCKUP · SYNTHETIC DATA · NO HARDWARE CONNECTION</span></div></section><section className="container section engineer-story"><img src="/images/engineer-readback.webp" alt="Generated concept of an aviation engineer reviewing flight data on a laptop connected through a maintenance adapter to a conceptual orange recorder in an aircraft hangar"/><div><div className="eyebrow">THE ENGINEER’S VIEW</div><h2>A clearer path<br/>from flight to findings.</h2><p>A proposed maintenance workstation brings parameter values, source quality and recorder health into one view. Independent readout should preserve the context of the recorded flight.</p><p className="caption">AI-generated workflow concept. Hardware, laptop software and maintenance connections are illustrative; no implemented BBR readback product is depicted.</p></div></section><section className="architecture-section section"><div className="container"><div className="section-heading"><div><div className="eyebrow">EXPLORE THE WORKFLOW</div><h2>The proposed BBR workstation.</h2></div><p>Switch views, scrub the example flight<br/>and export the synthetic samples.</p></div><Readback/></div></section><section className="container section source-grid"><article><h3>1. Extract independently</h3><p>Retained chunks are read through a separately defined extraction path. Physical connectors, transport and maintenance arbitration remain design inputs.</p></article><article><h3>2. Decode with context</h3><p>A versioned dictionary maps values to units, identities, acquisition time and explicit quality flags.</p></article><article><h3>3. Review and export</h3><p>The proposed engineering workflow supports parameter inspection, visible data gaps and an independent engineering-unit export.</p></article></section><section className="container section family-dinner"><Image src="/images/family-dinner.png" alt="An extended family of Asian, Caucasian and Arab heritage laughing and sharing dinner together at home" width={1672} height={941} sizes="(max-width: 1200px) 100vw, 1200px" style={{width: '100%', height: 'auto', borderRadius: 4}} /></section></main>}
+
+export const metadata: Metadata = {
+  title: 'Readback demonstration',
+  description: 'Inspect and export synthetic samples in a browser-based demonstration of the proposed BBR readback workflow.',
+};
+
+export default function ReadbackPage() {
+  return (
+    <ReportPage
+      label="Interactive appendix"
+      title="Readback demonstration"
+      summary="A browser-based example of the proposed ground workflow. Inspect parameter identity, elapsed time, units and source quality using synthetic flight data."
+      contents={[
+        { id: 'workstation', label: 'Interactive workstation' },
+        { id: 'workflow', label: 'Proposed recovery workflow' },
+      ]}
+    >
+      <section id="workstation" className="report-section workstation-section">
+        <h2>Interactive workstation</h2>
+        <p>Select a parameter and scrub to minutes 27 through 30 to inspect a simulated source outage. Export the synthetic samples as CSV or switch to the system view to trace the proposed interfaces.</p>
+        <Readback />
+      </section>
+      <section id="workflow" className="report-section">
+        <h2>Proposed recovery workflow</h2>
+        <ol className="workflow-list">
+          <li><strong>Extract retained chunks.</strong> The physical readout interface and access rules remain open. Recorder tests must demonstrate that maintenance access preserves required recording continuity.</li>
+          <li><strong>Decode from the versioned schema.</strong> Resolve parameter identity, engineering units, time and quality using the dictionary for that record format.</li>
+          <li><strong>Review and export.</strong> Keep missing intervals visible in analysis and preserve the quality flags in exported data.</li>
+        </ol>
+        <ChapterLink href="/technology#recovery">Review the storage and recovery design</ChapterLink>
+      </section>
+    </ReportPage>
+  );
+}

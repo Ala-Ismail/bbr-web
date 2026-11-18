@@ -1,7 +1,28 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
 import Header from '@/components/header';
 import './globals.css';
-export const metadata: Metadata = { title: { default: 'BBR — A continuous record of flight', template: '%s | BBR Aviation' }, description: 'An FPGA-based foundation for continuous aviation flight-data recording. Explore the proposed BBR architecture and development programme.' };
-export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body><a href="#main" className="skip">Skip to content</a><Header/>{children}<footer><div className="container footer-top"><Link href="/" className="brand">BBR<span>AVIATION SYSTEMS</span></Link><p>A continuous record.<br/>A clearer understanding.</p><Link href="/development">Follow the development <ArrowUpRight size={16}/></Link></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} BBR Aviation</span><span>Proposed architecture · Development in progress</span><Link href="/technology">Technology</Link></div></footer></body></html> }
+
+export const metadata: Metadata = {
+  title: { default: 'Flight Data Recorder Assessment | BBR Aviation', template: '%s | BBR Aviation' },
+  description: 'A technology and business white paper on the proposed BBR aviation flight-data recorder, its development risks and the case for prototype investment.',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <a href="#main" className="skip">Skip to content</a>
+        <Header />
+        {children}
+        <footer className="site-footer">
+          <div className="container footer-inner">
+            <Link href="/" className="footer-brand">BBR Aviation</Link>
+            <span>Flight Data Recorder Assessment</span>
+            <span>Research baseline · Verification pending</span>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}
