@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
         <figure className="cover-figure">
-          <Image src="/images/assessment-hangar.webp" alt="Rear view of a civil aircraft in a maintenance hangar" width={1774} height={887} preload />
+          <Image src="/images/assessment-hangar.webp" alt="Front three-quarter view of a passenger jet parked in a maintenance hangar" width={1536} height={1024} preload />
           <figcaption>AI-generated illustration of a civil aviation maintenance hangar.</figcaption>
         </figure>
       </section>

@@ -53,11 +53,11 @@ Photorealistic outdoor portrait photograph of a happy child about eight years ol
 
 ## assessment-hangar.webp
 
-Built-in ImageGen. Cover illustration for the BBR white paper. Optimized WebP, 1774 × 887.
+Built-in ImageGen. Front three-quarter view of a conceptual civil aircraft parked in a maintenance hangar. Optimized WebP, 1536 × 1024.
 
 Final prompt
 
-Use case: stylized-concept. Asset type: wide cover photograph for an aviation technology and business assessment white paper. Photorealistic high-end editorial aerospace photograph, cinematic but restrained. Passenger jet seen from directly behind and slightly above, centered, parked within a cavernous dark aircraft maintenance hangar; broad straight wings span the frame, cool steel-blue structural lines form a precise symmetrical perspective; amber work lights and a few amber floor reflections. Aircraft in muted silver, rich navy shadows. No people, lettering, graphics, logos or watermarks. Landscape, suitable to crop to about 2:1. Keep the full wings and aircraft tail visible in the central area.
+Use case: photorealistic-natural. Asset type: landscape cover photograph for an aviation engineering white paper. One parked conventional unbranded narrow-body civil passenger jet in a spacious blue-grey maintenance hangar under subdued warm work lights. Physically accurate, reference-quality aviation photography, full aircraft visible from a FRONT LEFT three-quarter view with a pronounced side profile, camera at cockpit height off the aircraft's port bow (roughly 55 degrees off the nose axis). In the image the visible rounded nose, black wraparound flight-deck windshield and nose gear are at the LEFT, the silver fuselage runs diagonally away toward the RIGHT, and the single vertical tail fin and its two much smaller horizontal stabilisers are attached to the AFT fuselage on the RIGHT. The two large swept main wings attach near the middle of the fuselage between nose and tail, sweep backward toward the tail, and carry one conventional turbofan each under and slightly ahead of the wing. The nearest engine inlet visibly faces toward the nose on the left. Plausible landing gear supporting a stationary aircraft. Compose with ample margin around nose, tail, and wing tips so the complete aircraft fits within the middle 80 percent of a horizontal 3:2 frame with no crop. Exact physical orientation and credible structure are higher priority than dramatic lighting. Cool navy steel, neutral silver, subtle amber highlights, editorial and documentary. No people, text, visible branding, watermark, blueprint or graphic overlays. Avoid rear view, duplicated tail, reversed aircraft surfaces, wings extending from the tail or engines facing aft.
 
 ## assessment-recorder.webp
 
