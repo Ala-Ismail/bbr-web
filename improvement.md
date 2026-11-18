@@ -20,7 +20,7 @@ Aviation is one case study for BBR. The overview and business chapter describe p
 
 ## Figures
 
-- The [aircraft hangar cover](public/images/assessment-hangar.webp) and [recorder workbench figure](public/images/assessment-recorder.webp) were made with the built-in ImageGen tool and saved as WebP. Both are identified as illustrative. [Generation prompts](public/images/ASSETS.md)
+- The [fixed-wing UAV cover](public/images/assessment-uav.webp) and [recorder workbench figure](public/images/assessment-recorder.webp) were made with the built-in ImageGen tool and saved as WebP. The UAV illustrates a potential application. The engineering baseline uses a civil fixed-wing transport scenario. [Generation prompts](public/images/ASSETS.md)
 - The [supplied top-level architecture diagram](public/images/aviation-bbr-top-level.png) appears as Figure 1 in the technology assessment, with a link to the original PNG for reading detailed labels.
 
 ## Evidence limits and next decision

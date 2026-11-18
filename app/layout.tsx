@@ -4,7 +4,7 @@ import Header from '@/components/header';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: { default: 'Flight Data Recorder Assessment | BBR Aviation', template: '%s | BBR Aviation' },
+  title: { default: 'Aviation Case Study | BBR Aviation', template: '%s | BBR Aviation' },
   description: 'A technology and business white paper on the proposed BBR aviation flight-data recorder, its development risks and the case for prototype investment.',
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="site-footer">
           <div className="container footer-inner">
             <Link href="/" className="footer-brand">BBR Aviation</Link>
-            <span>Flight Data Recorder Assessment</span>
+            <span>Aviation Case Study</span>
             <span>Research baseline · Verification pending</span>
           </div>
         </footer>

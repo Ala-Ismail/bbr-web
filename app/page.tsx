@@ -17,16 +17,16 @@ export default function Home() {
       <section className="cover" aria-labelledby="cover-title">
         <div className="cover-copy">
           <p className="eyebrow cover-kicker">Technology &amp; business white paper</p>
-          <h1 id="cover-title">Flight Data<br className="desktop-break" /> Recorder<br className="desktop-break" /> Assessment</h1>
-          <p className="lede">This BBR aviation case study assesses FPGA-based continuous capture, independent recovery and the case for prototype investment.</p>
+          <h1 id="cover-title">Aviation<br className="desktop-break" /> Case Study</h1>
+          <p className="lede">An assessment of BBR’s proposed flight data recorder, covering FPGA-based continuous capture, independent recovery and the case for prototype investment.</p>
           <div className="cover-actions">
             <a className="button primary" href="#executive-summary">Read the assessment <ArrowDown size={17} aria-hidden="true" /></a>
             <Link className="chapter-link" href="/technology">Technical architecture <ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
         <figure className="cover-figure">
-          <Image src="/images/assessment-hangar.webp" alt="Front three-quarter view of a passenger jet parked in a maintenance hangar" width={1536} height={1024} preload />
-          <figcaption>AI-generated illustration of a civil aviation maintenance hangar.</figcaption>
+          <Image src="/images/assessment-uav.webp" alt="Sleek fixed-wing unmanned aircraft with a rear propeller, parked in an aviation hangar" width={1536} height={1024} preload />
+          <figcaption>AI-generated illustration of a fixed-wing UAV concept.</figcaption>
         </figure>
       </section>
 
@@ -62,7 +62,7 @@ export default function Home() {
               <h3>Decision for the next phase</h3>
               <p>Select one target aircraft and a partner who can provide interface data and test access. Use that input to scope a bench prototype and estimate integration, qualification and support costs.</p>
             </div>
-            <p className="fine-print">Scope covers instrument and aircraft-system data. Cockpit voice, audio and video are outside the current study.</p>
+            <p className="fine-print">The engineering baseline covers instrument and aircraft-system data for civil fixed-wing transport. A BBR installation on a UAV would require platform-specific requirements and validation.</p>
           </section>
           <section id="other-applications" className="report-section">
             <h2>Applications beyond aviation</h2>
