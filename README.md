@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:3000. Routes: `/`, `/technology`, `/business`, `/development`, `/readback`. See [improvement.md](improvement.md) for the white paper structure and evidence limits.
+Open http://127.0.0.1:3000. Routes: `/`, `/technology`, `/business`, `/readback`. See [improvement.md](improvement.md) for the white paper structure and evidence limits.
 
 The readback page is an interactive concept using deterministic synthetic flight samples. It includes parameter selection, sample-time inspection, explicit missing-data intervals, engineering-unit CSV export and an illustrative system topology. It does not connect to or issue commands to hardware. Demo sessions share the same synthetic sample set.
 

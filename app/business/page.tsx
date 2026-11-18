@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ChapterLink, ReportPage } from '@/components/report';
+import { ReportPage } from '@/components/report';
 
 export const metadata: Metadata = {
   title: 'Business assessment',
@@ -58,7 +58,6 @@ export default function Business() {
           <h3>Fund requirements discovery first</h3>
           <p>Approve a bench prototype once a partner supplies a representative parameter set, agrees an acceptance test, identifies the approval owner and can support an initial cost estimate for one aircraft installation.</p>
         </div>
-        <ChapterLink href="/development">Review the development and verification gates</ChapterLink>
       </section>
     </ReportPage>
   );

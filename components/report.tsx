@@ -5,7 +5,6 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 export const chapters = [
   { href: '/technology', title: 'Technology', description: 'Recording architecture, storage assumptions and engineering risks.' },
   { href: '/business', title: 'Business case', description: 'Potential adopters, delivery options and the evidence needed to justify investment.' },
-  { href: '/development', title: 'Development', description: 'Decision gates from requirements through prototype and qualification planning.' },
   { href: '/readback', title: 'Readback', description: 'Interactive appendix for inspecting and exporting synthetic flight data.' },
 ];
 

@@ -9,7 +9,6 @@ The website now presents BBR as a research-stage technology and business assessm
 | [Overview](app/page.tsx) | What is BBR, what does the planning model show, and what decision comes next? |
 | [Technology](app/technology/page.tsx) | How does the proposed recording chain work, and which assumptions require tests? |
 | [Business case](app/business/page.tsx) | Who could adopt it, what could be delivered, and what evidence would justify funding? |
-| [Development](app/development/page.tsx) | What must be agreed, measured or reviewed at each development gate? |
 | [Readback](app/readback/page.tsx) | How might engineers inspect source quality, identify missing data and export samples? |
 
 The overview opens with retention, throughput and storage assumptions, followed by the executive summary and chapter index. The chapter pages use a shared editorial layout with section navigation, figure captions and evidence tables. The interactive recording path and readback demonstration remain available. The report also includes print styles for reading or saving individual chapters.

@@ -9,7 +9,6 @@ const links = [
   ['/', 'Overview'],
   ['/technology', 'Technology'],
   ['/business', 'Business case'],
-  ['/development', 'Development'],
   ['/readback', 'Readback'],
 ];
 
